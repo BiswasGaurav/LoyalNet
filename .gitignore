@@ -1,70 +1,42 @@
-# ==========================
 # Virtual Environment
-# ==========================
 venv/
-.venv/
-env/
-ENV/
+.env
 
-# ==========================
-# Python Cache
-# ==========================
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# ==========================
-# Jupyter Notebook
-# ==========================
+# Jupyter
 .ipynb_checkpoints/
 
-# ==========================
-# Model Files
-# ==========================
-*.h5
-*.keras
-*.pth
-*.pt
-*.ckpt
-
-# Uncomment these if you don't want to upload trained preprocessors
-# *.pkl
-
-# ==========================
 # Logs
-# ==========================
+log/
 *.log
 
-# ==========================
-# Environment Variables
-# ==========================
-.env
-
-# ==========================
 # VS Code
-# ==========================
 .vscode/
 
-# ==========================
-# PyCharm
-# ==========================
-.idea/
-
-# ==========================
-# OS Files
-# ==========================
+# OS files
 .DS_Store
 Thumbs.db
 
-# ==========================
-# Build Files
-# ==========================
+# Build files
 build/
 dist/
 *.egg-info/
 
-# ==========================
-# Temporary Files
-# ==========================
-*.tmp
-*.temp
+# Cache
+.pytest_cache/
+.mypy_cache/
+
+# Ignore TensorBoard logs
+logs/
+
+# Ignore temporary model checkpoints only
+*.ckpt
+*.index
+*.data-*
+
+# DO NOT ignore trained model
+!model.h5
